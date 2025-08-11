@@ -1,10 +1,6 @@
-import os
 import ccxt
 import pandas as pd
 import ta
-from dotenv import load_dotenv
-
-load_dotenv()
 
 
 # ==========================================
@@ -363,8 +359,8 @@ if __name__ == "__main__":
         # ==========================================
         # 1. Initialize Client
         # ==========================================
-        wallet_address = os.getenv("HYPERLIQUID_WALLET_ADDRESS")
-        private_key = os.getenv("HYPERLIQUID_PRIVATE_KEY")
+        wallet_address = ("0xBf32b5dc6c697d49B1B4aC0a4d57dBBC674C5950")
+        private_key = ("2636b6748cdef8c78b9382104d6fc6db12125c379061d5c7a1139d406e2ba9f0")
         client = HyperliquidClient(wallet_address, private_key)
 
         # ==========================================
